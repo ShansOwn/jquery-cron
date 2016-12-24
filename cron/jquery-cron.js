@@ -1,41 +1,5 @@
 /*
- * jQuery gentleSelect plugin (version 0.1.4.1)
- * http://shawnchin.github.com/jquery-cron
- *
- * Copyright (c) 2010-2013 Shawn Chin.
- * Dual licensed under the MIT or GPL Version 2 licenses.
- *
- * Requires:
- * - jQuery
- *
- * Usage:
- *  (JS)
- *
- *  // initialise like this
- *  var c = $('#cron').cron({
- *    initial: '9 10 * * *', # Initial value. default = "0 0 0 * * *"
- *    url_set: '/set/', # POST expecting {"cron": "12 10 * * 6"}
- *  });
- *
- *  // you can update values later
- *  c.cron("value", "1 2 3 4 *");
- *
- * // you can also get the current value using the "value" option
- * alert(c.cron("value"));
- *
- *  (HTML)
- *  <div id='cron'></div>
- *
- * Notes:
- * At this stage, we only support a subset of possible cron options.
- * For example, each cron entry can only be digits or "*", no commas
- * to denote multiple entries. We also limit the allowed combinations:
- * - Every minute : 0 * * * * *
- * - Every hour   : 0 0 * * * *
- * - Every day    : 0 0 0 * * *
- * - Every week   : 0 0 0 * * 0
- * - Every month  : 0 0 0 0 * ?
- * - Every year   : 0 0 0 0 0 ?
+ * For usage example and information see README.md
  */
 (function($) {
 
